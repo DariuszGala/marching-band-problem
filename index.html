@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
     integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-
 </head>
 
 <body>
@@ -62,11 +61,19 @@
     <iframe id="dl-widget"
       style="border: 0;width: 100%!important;padding: 0;margin: 0 auto;min-height: 200px;max-width: 1000px;display:block;"
       src="https://widget-sandbox.droplabs.pl/index.html?facilityId=79147&onlineGroupId=7051"></iframe>
-    <script type="text/javascript" src="https://widget-sandbox.droplabs.pl/widget.js"></script>
+    <script type="text/javascript" src="https://widget-sandbox.droplabs.pl/widget.js" async></script>
     <!-- Koniec elementu sprzedażowego Droplabs.pl -->
 
   </div>
+  <script>
+    (function() {
+      window.addEventListener('message', event => {
+        console.log(event);
+
+        return;
+      });
+    })()
+  </script>
   <script src="./index.js"></script>
 </body>
-
 </html>
